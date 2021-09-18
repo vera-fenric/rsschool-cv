@@ -8,16 +8,22 @@
 **Github:** [vera-fenric](https://github.com/vera-fenric)<br>
 
 ## About me
-
-I study in Moscow State University, The Faculty of Computational Mathematics and Cybernetics.<br>
-I am getting my bachelor's degree in 2022.<br>
-
-![Image of MSU](https://cdn21.img.ria.ru/images/07e5/05/09/1731610485_0:160:3072:1888_1920x0_80_0_0_c003482deafb9678a6a02b23196d4d12.jpg)
-
->If you see this line, it means I haven't finished my CV yet, because it's too late and I want to sleep z-z-z...<br>
+Age: 22.<br>
+Hobbies: digital drawing, skiing.<br>
+Three strongest soft skills:
+* critical thinking (I enjoy catching mistakes in my or others' work and I can also provide some help to those who need it),
+* being very polite and non-conflicting (if you see a person abusing someone... it can't be me),
+* being an organized person (I write down all my plans and follow them).<br>
+  
+Habits:
+* no alcohol,
+* no smoking.<br>
 
 ## Education
 Russia, MSU, The Faculty of Computational Mathematics and Cybernetics, '22<br>
+
+![Image of MSU](https://cdn21.img.ria.ru/images/07e5/05/09/1731610485_0:160:3072:1888_1920x0_80_0_0_c003482deafb9678a6a02b23196d4d12.jpg)
+
 My programming courses here are:<br>
 - [x] Algorithms and algorithmic languages, Pascal:)
 - [x] Computer architecture and Assembly language (for real)
