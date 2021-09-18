@@ -1,0 +1,100 @@
+:root{
+    --nav-add-color: rgb(105, 83, 145);
+    --nav-color: rgb(235, 172,176);
+    --main-color: rgb(201, 228, 226);
+    --bg-color: rgb(93, 171, 185);
+    --text-color: rgb(33,46,83);
+}
+body{
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 10px black;
+    margin: 0px;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+html {
+    background-color: var(--bg-color); //antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-color);
+}
+section{
+    margin: 0px 16px;
+}
+
+#me{
+    float: right;
+    margin: 30px;
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border: 3px solid var(--text-color);
+}
+#msu{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px solid var(--text-color);
+}
+nav {
+    background-color: var(--bg-color);
+}
+#nav-list{
+    list-style-type: none;
+}
+#contacts-list{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px 16px;
+}
+li{
+    margin-bottom: 0.3em;
+}
+.nav-link{
+    color: whitesmoke;
+}
+p{
+    padding: 0px 16px;
+}
+ul{
+    line-height: 1.5;
+    margin: 0px 16px;
+}
+h1{
+    font-variant: small-caps;
+    background-color: var(--text-color);
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    margin: 0px;
+}
+
+#code-example{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--text-color);
+    margin: 16px;
+    padding: 0px 32px;
+}
+
+blockquote{
+    opacity: 0.5;
+    font-style: italic;
+    margin: 0px;
+}
+
+h2{
+    font-variant: small-caps;
+    background-color: var(--bg-color);
+    padding: 4px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--nav-add-color);
+}

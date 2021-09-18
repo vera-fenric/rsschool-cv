@@ -7,27 +7,28 @@
     <link rel="stylesheet" href="styles/slyles.css">
     <meta name="description" content="CV Bekresheva Vera">
     <meta property="og:image" content="images/my_photo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Логотип">
+        <!--<img src="logo.png" alt="Логотип">-->
         <h1>Bekresheva Vera</h1>   
         <nav>
-            <ul>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#edu">Education</a></li>
-                <li><a href="#exp">Work experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#code">Code example</a></li>
-                <li><a href="#lang">Languages</a></li>
+            <ul id="nav-list">
+                <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                <li><a class="nav-link" href="#about">About me</a></li>
+                <li><a class="nav-link" href="#edu">Education</a></li>
+                <li><a class="nav-link" href="#exp">Work experience</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#code">Code example</a></li>
+                <li><a class="nav-link" href="#lang">Languages</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="contacts" class="Contacts">
+        <section id="contacts">
             <h2>Contacts</h2>
-            <ul>
+            <ul id="contacts-list">
                 <li><b>E-mail:</b> verabekr@gmail.com</li>
                 <li><b>Telegram:</b> @fenric_yo</li>
                 <li><b>Discord:</b> fenric#0921</li>
@@ -35,9 +36,9 @@
             </ul>
         </section>
 
-        <section id="about" class="About me">
+        <section id="about">
             <h2>About me</h2>
-            <img src="images/my_photo.jpg" alt="My photo" height="200">
+            <img id="me" src="images/my_photo.jpg" alt="My photo" height="200">
             <p>Age: 22.</p>
             <p>Hobbies: digital drawing, skiing.</p>
             <p>Three strongest soft skills:</p>
@@ -53,10 +54,10 @@
                     <li>no smoking.</li>
                 </ul>
         </section>
-        <section id="edu" class="Education">
+        <section id="edu">
             <h2>Education</h2>
             <p>Russia, MSU, The Faculty of Computational Mathematics and Cybernetics, '22</p>
-            <img src="https://cdn21.img.ria.ru/images/07e5/05/09/1731610485_0:160:3072:1888_1920x0_80_0_0_c003482deafb9678a6a02b23196d4d12.jpg" alt="MSU" width="600">
+            <img id="msu" src="https://cdn21.img.ria.ru/images/07e5/05/09/1731610485_0:160:3072:1888_1920x0_80_0_0_c003482deafb9678a6a02b23196d4d12.jpg" alt="MSU">
             <p>My programming courses here are:</p>
                 <ul>
                     <li>Algorithms and algorithmic languages, Pascal:)</li>
@@ -69,13 +70,12 @@
                 </ul>
 
         </section>
-        <section id="exp" class="Work experience">
+        <section id="exp">
             <h2>Work experience</h2>
             <p>I don't have any work experience as a <i>developer</i>, but I worked as a <i>tutor</i> for children preparing them for the exams, and as a <i>teacher</i> in <a href="https://www.formulo.org">Formula of Unity</a>.</p>
             <p>In my uni I've made some studying tasks</p>
             <blockquote>
                 <p>I'm not sure if it works correctly, but I'll make it prettier to the time I make real CV.</p>
-                <p>Anyway, you can see my <i>real</i> code examples here</p>
             </blockquote>
                 <ul>
                     <li><a href="https://github.com/vera-fenric/spring2020">Simple Server</a> (C++)</li>
@@ -83,7 +83,7 @@
                     <li><a href="https://github.com/vera-fenric/Lab6">App with UI for Windows</a>  - practical task for learing SOLID, MVVM pattern (C#, XAML)</li>
                 </ul>
         </section>
-        <section id="skills" class="Skills">
+        <section id="skills">
             <h2>Skills</h2>
                 <ul>
                     <li>Git, GitHub</li>
@@ -91,25 +91,25 @@
                     <li>Some XAML</li>
                     <li>SOLID</li>
                     <li>MVVM pattern</li>
-                    <li>HTML, CSS, JavaScript ?</li>
+                    <li>HTML, CSS, JavaScript</li>
                     <li>I know how to Google:)</li>
                 </ul>
         </section>
-        <section id="code" class="Code example">
+        <section id="code">
             <h2>Code example</h2>
             <p>This is my one-line solution for <a href="https://www.codewars.com/kata/56747fd5cb988479af000028">this kata</a>.</p>
-            <code>
-                    function getMiddle(s)
-                    {
-                        return s.substr(s.length/2-1+s.length%2/2,2-s.length%2);
-                    }
-            </code>
+            <pre id="code-example"><code>
+function getMiddle(s)
+{
+    return s.substr(s.length/2-1+s.length%2/2,2-s.length%2);
+}
+            </code></pre>
             <blockquote><p>
                 Usually, I don't use the shortest solution because it's harder to understand. I enjoy clear understandable code, and I can't imagine my life without comments.
             </p></blockquote>
             
         </section>
-        <section id="lang" class="Languages">
+        <section id="lang">
             <h2>Languages</h2>
                 <ul>
                     <li>
