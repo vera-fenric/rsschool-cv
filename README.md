@@ -1,1 +1,1 @@
-https://vera-fenric.github.io/rsschool-cv/cv
+https://vera-fenric.github.io/rsschool-cv/
