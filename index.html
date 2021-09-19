@@ -41,8 +41,9 @@
         </section>
         <div class="anchor" id="about"></div>
         <section>
+            <article>
             <h2>About me</h2>
-            <img id="me" src="images/my_photo.jpg" alt="My photo" height="200">
+            <figure><img id="me" src="images/my_photo.jpg" alt="My photo" height="200"></figure>
             <p><b>Name:</b> Vera Bekresheva.</p>
             <p><b>Location:</b> Moscow, Krasnodar.</p>
             <p><b>Age:</b> 22.</p>
@@ -59,12 +60,13 @@
                     <li>no alcohol,</li>
                     <li>no smoking.</li>
                 </ul>
+            </article>
         </section>
         <div class="anchor" id="edu"></div>
         <section>
             <h2>Education</h2>
             <p>Russia, MSU, The Faculty of Computational Mathematics and Cybernetics, '22</p>
-            <img id="msu" src="https://cdn21.img.ria.ru/images/07e5/05/09/1731610485_0:160:3072:1888_1920x0_80_0_0_c003482deafb9678a6a02b23196d4d12.jpg" alt="MSU">
+            <figure><img class="simple_image" src="https://cdn21.img.ria.ru/images/07e5/05/09/1731610485_0:160:3072:1888_1920x0_80_0_0_c003482deafb9678a6a02b23196d4d12.jpg" alt="MSU"></figure>
             <p>My programming courses here are:</p>
                 <ul>
                     <li>Algorithms and algorithmic languages, Pascal:)</li>
@@ -87,8 +89,22 @@
             </blockquote>
                 <ul>
                     <li><a href="https://github.com/vera-fenric/spring2020" target="_blank">Simple Server</a> (C++)</li>
-                    <li><a href="https://github.com/vera-fenric/KG-2020" target="_blank">Task for Computer Graphics</a>  - dynamic 3D model with some effects (C, C++, using freeglut)</li>
-                    <li><a href="https://github.com/vera-fenric/Lab6" target="_blank">App with UI for Windows</a>  - practical task for learing SOLID, MVVM pattern (C#, XAML)</li>
+                    <li>
+                        Task for Computer Graphics - dynamic 3D model with some effects (C, C++, using freeglut)
+                        <figure>
+                            <a href="https://github.com/vera-fenric/KG-2020" target="_blank">
+                                <img class="simple_image" src="images/computer-graphics.png" alt="computer-graphics task">
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        App with UI for Windows - practical task for learing SOLID, MVVM pattern (C#, XAML)
+                        <figure>
+                            <a href="https://github.com/vera-fenric/Lab6" target="_blank">
+                                <img class="simple_image" src="images/windows-ui.png" alt="windows-ui app">
+                            </a> 
+                        </figure>
+                    </li>
                 </ul>
         </section>
         <div class="anchor" id="skills"></div>
@@ -106,7 +122,7 @@
         </section>
         <div class="anchor" id="code"></div>
         <section>
-            <h2>Code example</h2>
+            <h3>Code example</h3>
             <p>This is my one-line solution for <a href="https://www.codewars.com/kata/56747fd5cb988479af000028">this kata</a>.</p>
             <div id="code-example">
             <pre><code data-language="JavaScript" class="JavaScript">
@@ -120,8 +136,8 @@ function getMiddle(s)
             </p></blockquote>   
         </section>
         <div class="anchor" id="lang"></div>
-        <section>
-            <h2>Languages</h2>
+        <article>
+            <h3>Languages</h3>
                 <ul>
                     <li>
                         English<br>
@@ -133,7 +149,7 @@ function getMiddle(s)
                         Russian is my native language.
                     </li>
                 </ul>
-        </section>
+        </article>
 
     </main>
     <footer>
@@ -151,6 +167,28 @@ function getMiddle(s)
                 x.className = "nav";
             }
         }
+    </script>
+    <script>
+        console.log("1. вёрстка валидная 10/10");
+        console.log("2. вёрстка семантическая 20/20");
+        console.log(" семантические элементы: header, nav, main, article, section, figure, footer, h1, h2, h3");
+        console.log("3. для оформления используются css-стили 10/10");
+        console.log("4. горизонтально всё центрируется, фоновый цвет по всей странице 10/10");
+        console.log("5. вёрстка адаптивная 10/10");
+        console.log(" полоса прокрутки не появляется при уменьшении ширины страницы");
+        console.log("6. адаптивное бургер меню + плавная прокрутка 10/10");
+        console.log("7. присутствует фото, пропорции не искажены, есть атрибут alt 10/10");
+        console.log("8. контакты для связи и перечень навыков оформлены в виде списка ul>li 10/10");
+        console.log(" контакты оформлены как сказано, можно посмотреть в исходном коде, но маркер списка спрятан");
+        console.log("9. CV содержит нужную информацию 10/10");
+        console.log("10. CV содержит пример кода с подсветкой 10/10");
+        console.log("11. CV содержит изображения-ссылки на выполненные вами проекты 10/10");
+        console.log("12. CV выполнено на английском языке 10/10");
+        console.log("13. выполнены требования к Pull-request 10/10");
+        console.log("14. есть видеорезюме 0/10");
+        console.log(" нет видеорезюме:))");
+        console.log("15. дизайн, оформление, качество 10/10");
+        console.log("ИТОГО: 150/160");
     </script>
 </body>
 </html>
