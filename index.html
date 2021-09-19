@@ -5,28 +5,34 @@
     <title>CV Bekresheva Vera</title>
     <link rel="icon" href="images/icon.png" sizes="32x32">
     <link rel="stylesheet" href="styles/slyles.css">
+    <link rel="stylesheet" href="styles/nav.css">
     <meta name="description" content="CV Bekresheva Vera">
     <meta property="og:image" content="images/my_photo.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="js/js-highlight.js"></script>
+    <link href="styles/obsidian.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
     <header>
-        <!--<img src="logo.png" alt="Логотип">-->
-        <h1>Bekresheva Vera</h1>   
-        <nav>
+        <nav class="nav" id="main-nav">
             <ul id="nav-list">
-                <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                <li><a class="nav-link" href="#about">About me</a></li>
-                <li><a class="nav-link" href="#edu">Education</a></li>
-                <li><a class="nav-link" href="#exp">Work experience</a></li>
-                <li><a class="nav-link" href="#skills">Skills</a></li>
-                <li><a class="nav-link" href="#code">Code example</a></li>
-                <li><a class="nav-link" href="#lang">Languages</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#exp">Work experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code example</a></li>
+                <li><a href="#lang">Languages</a></li>
+                <li><a class="icon" href="javascript:void(0);" onclick="NavRenameFunc()"><img src="images/burger-icon.png" alt="burger-icon" width="32"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="contacts">
+        <h1>Bekresheva Vera</h1>
+        <div class="anchor" id="contacts"></div>
+        <section>
             <h2>Contacts</h2>
             <ul id="contacts-list">
                 <li><b>E-mail:</b> verabekr@gmail.com</li>
@@ -35,26 +41,29 @@
                 <li><b>Github:</b> <a href="https://github.com/vera-fenric">vera-fenric</a></li>
             </ul>
         </section>
-
-        <section id="about">
+        <div class="anchor" id="about"></div>
+        <section>
             <h2>About me</h2>
             <img id="me" src="images/my_photo.jpg" alt="My photo" height="200">
-            <p>Age: 22.</p>
-            <p>Hobbies: digital drawing, skiing.</p>
-            <p>Three strongest soft skills:</p>
+            <p><b>Name:</b> Vera Bekresheva.</p>
+            <p><b>Location:</b> Moscow, Krasnodar.</p>
+            <p><b>Age:</b> 22.</p>
+            <p><b>Hobbies:</b> digital drawing, skiing.</p>
+            <p><b>Three strongest soft skills:</b></p>
                 <ul>
                     <li>critical thinking (I enjoy catching mistakes in my or others' work and I can also provide some help to those who need it),</li>
                     <li>being very polite and non-conflicting (if you see a person abusing someone... it can't be me),</li>
                     <li>being an organized person (I write down all my plans and follow them).</li>
                 </ul>
 
-            <p>Habits:</p>
+            <p><b>Habits:</b></p>
                 <ul>
                     <li>no alcohol,</li>
                     <li>no smoking.</li>
                 </ul>
         </section>
-        <section id="edu">
+        <div class="anchor" id="edu"></div>
+        <section>
             <h2>Education</h2>
             <p>Russia, MSU, The Faculty of Computational Mathematics and Cybernetics, '22</p>
             <img id="msu" src="https://cdn21.img.ria.ru/images/07e5/05/09/1731610485_0:160:3072:1888_1920x0_80_0_0_c003482deafb9678a6a02b23196d4d12.jpg" alt="MSU">
@@ -70,7 +79,8 @@
                 </ul>
 
         </section>
-        <section id="exp">
+        <div class="anchor" id="exp"></div>
+        <section>
             <h2>Work experience</h2>
             <p>I don't have any work experience as a <i>developer</i>, but I worked as a <i>tutor</i> for children preparing them for the exams, and as a <i>teacher</i> in <a href="https://www.formulo.org">Formula of Unity</a>.</p>
             <p>In my uni I've made some studying tasks</p>
@@ -83,7 +93,8 @@
                     <li><a href="https://github.com/vera-fenric/Lab6">App with UI for Windows</a>  - practical task for learing SOLID, MVVM pattern (C#, XAML)</li>
                 </ul>
         </section>
-        <section id="skills">
+        <div class="anchor" id="skills"></div>
+        <section>
             <h2>Skills</h2>
                 <ul>
                     <li>Git, GitHub</li>
@@ -95,21 +106,23 @@
                     <li>I know how to Google:)</li>
                 </ul>
         </section>
-        <section id="code">
+        <div class="anchor" id="code"></div>
+        <section>
             <h2>Code example</h2>
             <p>This is my one-line solution for <a href="https://www.codewars.com/kata/56747fd5cb988479af000028">this kata</a>.</p>
-            <pre id="code-example"><code>
+            <div id="code-example">
+            <pre><code data-language="JavaScript" class="JavaScript">
 function getMiddle(s)
 {
-    return s.substr(s.length/2-1+s.length%2/2,2-s.length%2);
-}
-            </code></pre>
+    return s.substr(s.length / 2 - 1 + s.length % 2 / 2, 2 - s.length % 2);
+}</code></pre>
+        </div>
             <blockquote><p>
                 Usually, I don't use the shortest solution because it's harder to understand. I enjoy clear understandable code, and I can't imagine my life without comments.
-            </p></blockquote>
-            
+            </p></blockquote>   
         </section>
-        <section id="lang">
+        <div class="anchor" id="lang"></div>
+        <section>
             <h2>Languages</h2>
                 <ul>
                     <li>
@@ -126,9 +139,20 @@ function getMiddle(s)
 
     </main>
     <footer>
-        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs school logo" height="64" width="64"></a>
-        <a href="https://github.com/vera-fenric/"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" height="64" width="64"></a>
-        <p>2021</p>
+        <p id="footer">2021</p>
+        <a class="footer-img" href="https://github.com/vera-fenric/"><img src="images/github-logo.png" alt="github logo" height="64" width="64"></a>
+        <a class="footer-img" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs school logo" height="64" width="64"></a>
+        
     </footer>
+    <script type="text/javascript">
+        function NavRenameFunc() {
+            var x = document.getElementById("main-nav");
+            if (x.className == "nav") {
+                x.className += "-responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
 </body>
 </html>
